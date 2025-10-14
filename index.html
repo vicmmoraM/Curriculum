@@ -4,154 +4,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Victor Morales</title>
+    <title>Curriculum - Victor Morales</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <header>
-        <h1>Victor Manuel Morales Vasquez</h1>
-        <p>Estudiante | vicmmora@espol.edu.ec | 0963186659</p>
+    <header class="site-header">
+        <div class="logo">
+            <a href="#">&lt;Victor Morales/&gt;</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#Experiencia">Experiencia</a></li>
+                <li><a href="#Educación">Educación</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#testimonios">Testimonios</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="resumen">
-            <h2>Sobre mi</h2>
-            <p>Estudiante de Ingeniería en Computación con bases sólidas en programación y estructuras de datos.
-                Apasionado por el desarrollo de software</p>
-            <figure>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dNrR9oSziZs?si=M_rbKC7LY_FMqEB0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                <figcaption>
-                    Video de interés: "La fórmula para DESTROZAR 1vs1 con Briar: Mental + Build".
-                </figcaption>
-            </figure>
-        </section>
-        <section id="experiencia">
-            <h2>Experiencia</h2>
-        </section>
-        <section id="educacion">
-            <h2>Educación</h2>
-        </section>
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-        </section>
+    <main class="legends">
+        <section id="inicio" class="legends">
+            <div class="profile-image-container">
+                <img src="images/profile.jpg" alt="Profile Image" class="profile-image">
+                <div class="status-dot"></div>
+            </div>
 
-        <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h1 class ="section-tittle">Victor Morales</h1>
+            <p class="tagline">Estudiante | vicmmora@espol.edu.ec | 0963186659</p>
+            <p class="legends-description">
+                Estudiante en Ingenieria en Computación con bases sólidas en programación
+                y estructuras de datos un gran apasionado por el desarrollo de software.
+            </p>
 
+            <div class="legends-buttons">
+                <a href="#Contacto" class="btn btn-primary">
+                    <i class='bx bx-paper-plane'></i>
+                    Contáctame
+                </a>
+                <a href="#" class="btn btn-secondary">
+                    <i class='bx bx-download'></i>
+                    Descargar CV
+                </a>
+            </div>
 
+            <div class="social-links">
+                <a href="https://github.com/vicmmoraM" aria-label="GitHub" target="_blank"><i
+                        class='bx bxl-github'></i></a>
+                <a href="https://linkedin.com/in/victor-manuel-morales-vasquez-049a25320/" aria-label="LinkedIn" target="_blank"><i
+                        class='bx bxl-linkedin-square'></i></a>
+                <a href="mailto:vicmmora@espol.edu.ec" aria-label="Correo Electrónico"><i
+                        class='bx bx-envelope'></i></a>
+            </div>
 
-
-            <table>
-                <caption>Lista de Proyectos Destacados</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Título del Proyecto</th>
-                        <th scope="col">Descripción Clave</th>
-                        <th scope="col">Tecnologías</th>
-                        <th scope="col">Enlace/GitHub</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Calculo de la traza - ProjectCV2P</th>
-                        <td>Desarrollo de una interfaz de currículum vitae utilizando HTML5 y CSS, enfocada en la
-                            semántica y la accesibilidad web.</td>
-                        <td>HTML5, CSS.</td>
-                        <td><a href="https://github.com/vicmmoraM/ProjectCV2P" target="_blank">Ver Repositorio</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">Juego de cartas - BlackJackProject</th>
-                        <td>Proyecto de Blackjack con detección de cartas (YOLO) e inteligencia artificial (Minimax)
-                            para el dealer.</td>
-                        <td>Python, Flask, YOLO, Minimax, HTML5, CSS, JS.</td>
-                        <td><a href="https://github.com/vicmmoraM/BlackJackProject" target="_blank">Ver
-                                Repositorio</a></td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-
+            <div class="scroll-indicator">
+                <a href="#sobre-mi"><i class='bx bx-chevron-down'></i></a>
+            </div>
         </section>
 
-        <section id="testimonios">
-            <h2>Testimonios</h2>
+        <section id="sobre-mi" class="content-section">
+            <h2 class="section-tittle">Sobre mí</h2>
+            <div class="about-content-single-column">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>hola, tomates</p>
+                        <p>zanahorias, y si</p>
+                    </div>
+                    <div class="interests-container">
+                        <h3>Intereses</h3>
+                        <ul class="interests-list">
+                            <li><strong>💻 Software & Web Development:</strong> Construcción de aplicaciones web y
+                                móviles, backend y frontend.</li>
+                            <li><strong>🧠 Artificial Intelligence:</strong> Exploración de algoritmos, modelos y
+                                aplicaciones de IA.</li>
+                            <li><strong>📊 Data Science, Analysis & Engineering:</strong> Extracción de insights,
+                                visualización y toma de decisiones basada en datos.</li>
+                            <li><strong>🗣️ Languages</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <article>
-                <blockquote>
-                    <p>“Su dedicación y proactividad fueron clave para el éxito del proyecto de migración de datos. Es
-                        un profesional en el que se puede confiar.”</p>
-                </blockquote>
-                <figure>
-                    <figcaption>
-                        <dl>
-                            <dt>Persona:</dt>
-                            <dd><strong>Elena Rojas</strong>, Directora de Innovación en TechSolutions Corp.</dd>
-                            <dt>Experiencia:</dt>
-                            <dd>Trabajamos juntos durante 2 años en el desarrollo e implementación de una nueva
-                                plataforma de
-                                gestión interna, donde su rol fue fundamental en la optimización de procesos.</dd>
-                        </dl>
-                    </figcaption>
-                </figure>
-            </article>
+        <section id="Experiencia" class ="content-section">
+            <h2 class ="section-tittle">Experiencia Laboral</h2>
+            <div class="time line">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Agosto 2023 - Octubre 2023</div>
+                    <div class="timeline-content">
+                        <h3>Asistente Técnico (Pasante)</h3>
+                        <p class="company">iRoute</p>
+                        <ul>
+                            <li>Apoyo en la digitalización, organización y gestión de documentos técnicos y administrativos.</li>
+                            <li>Colaboración con el equipo de tecnología en tareas de soporte técnico básico y mantenimiento de equipos.</li>
+                            <li>Participación en reuniones internas para comprender flujos de trabajo y herramientas empresariales.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <hr>
+        <section id="Educación" class="content-section">
+            <h2 class = "section-tittle">Educación</h2>
+            <div class = "education-grid">
+                <div class = "education-card">
+                    <div class="education-header">
+                        <i class='bx bxs-school'></i>
+                        <span class="education-date">Cursando (5º Ciclo)</span>
+                    </div>
+                    <h3>Ingeniería en Ciencias de la Computación</h3>
+                    <p class="institution">ESPOL</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-header">
+                        <i class='bx bxs-certification'></i>
+                        <span class="education-date">Finalizado</span>
+                    </div>
+                    <h3>Técnico - Área Técnica TICs Informático</h3>
+                    <p class="institution">Unidad Educativa San Agustín</p>
+                </div>
+            </div>
+        </section>
 
-            <article>
-                <blockquote>
-                    <p>“Tiene una habilidad excepcional para resolver problemas complejos bajo presión y siempre se
-                        mantiene al día con las últimas tecnologías del mercado.”</p>
-                </blockquote>
-                <figure>
-                    <figcaption>
-                        <dl>
-                            <dt>Persona:</dt>
-                            <dd><strong>Javier Soto</strong>, Gerente de I+D en AlphaSoft.</dd>
-                            <dt>Experiencia:</dt>
-                            <dd>Supervisé su trabajo en varios proyectos de investigación y desarrollo de software. Su
-                                visión
-                                técnica aportó soluciones innovadoras que superaron las expectativas iniciales.</dd>
-                        </dl>
-                    </figcaption>
-                </figure>
-            </article>
+        <section id="Habilidades" class="content-section">
+            <h2 class="section-tittle">Habilidades Técnicas</h2>
+            <div class="skills-container">
+                <div class="skill-main-categories">
+                    <div class="skill-category-card">
+                        <h3>Data Analysis</h3>
+                        <p>Tools and libraries for cleaning, transforming, exploring and modeling data.</p>
+                        <div class="skills-tags">
+                            <span><i class='bx bxl-python'></i> Python</span>
+                            <span><i class='bx bxl-visual-studio'></i> MySQL</span>
+                            <span><i class='bx bxl-stack-overflow'></i> Pandas</span>
+                            <span><i class='bx bxs-calculator'></i> Numpy</span>
+                            <span><i class='bx bxs-bar-chart-alt-2'></i> Matplotlib</span>
+                        </div>
+                    </div>
+                    <div class="skill-category-card">
+                        <h3>Web Development</h3>
+                        <p>Languages and frameworks for building dynamic, interactive and responsive web apps.</p>
+                        <div class="skills-tags">
+                            <span><i class='bx bxl-javascript'></i> Javascript</span>
+                            <span><i class='bx bxl-html5'></i> HTML</span>
+                            <span><i class='bx bxl-css3'></i> CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-other-category">
+                    <div class="skill-category-card">
+                        <h3>Others</h3>
+                        <p>Additional technologies for software development, version control and programming logic.</p>
+                        <div class="skills-tags">
+                            <span><i class='bx bxl-java'></i> Java</span>
+                            <span><i class='bx bxl-git'></i> Git</span>
+                            <span><i class='bx bxl-github'></i> Github</span>
+                            <span><i class='bx bxl-c-plus-plus'></i> C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <hr>
+        <section id="Proyectos" class="content-section">
+            <h2 class="section-tittle">Proyectos Destacados</h2>
+            <p class = "tagline">Una selección de mis repositorios principales en GitHub.</p> 
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <i class='bx bx-book-content'></i>
+                        <h3>vicmmoraM/ProjectCV2P</h3>
+                    </div>
+                    <p>Calculadora de longitud de traza. Un proyecto enfocado en la creación de un currículum vitae interactivo.</p>
+                    <div class="project-tags">
+                        <span>Tcl</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vicmmoraM/ProjectCV2P" target="_blank" class="btn btn-secondary">
+                            <i class='bx bxl-github'></i> Código
+                        </a>
+                    </div>
+                </article>
 
-            <article>
-                <blockquote>
-                    <p>“Un excelente comunicador y líder de equipo. Facilitó la colaboración entre los distintos
-                        departamentos, logrando entregar a tiempo un producto de alta calidad.”</p>
-                </blockquote>
-                <figure>
-                    <figcaption>
-                        <dl>
-                            <dt>Persona:</dt>
-                            <dd><strong>María Fernanda Cruz</strong>, CEO de Global Marketing Hub.</dd>
-                            <dt>Experiencia:</dt>
-                            <dd>Colaboramos en el lanzamiento de nuestra campaña digital más grande, donde demostró ser
-                                un
-                                líder técnico y un nexo crucial entre el equipo de diseño y el de desarrollo.</dd>
-                        </dl>
-                    </figcaption>
-                </figure>
-            </article>
+                <article class="project-card">
+                    <div class="project-header">
+                        <i class='bx bx-joystick'></i>
+                        <h3>vicmmoraM/BlackJackProject</h3>
+                    </div>
+                    <p>Juego interactivo de Blackjack con interfaz por cámara usando OpenCV y lógica condicional para simular decisiones.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vicmmoraM/BlackJackProject" target="_blank" class="btn btn-secondary">
+                            <i class='bx bxl-github'></i> Código
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <i class='bx bx-health'></i>
+                        <h3>LockHurb/Bones-Bytes</h3>
+                    </div>
+                    <p>XrayAssist es una aplicación web que utiliza inteligencia artificial para analizar radiografías y generar informes preliminares.</p>
+                    <div class="project-tags">
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/LockHurb/Bones-Bytes" target="_blank" class="btn btn-secondary">
+                            <i class='bx bxl-github'></i> Código
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="Contacto" class="content-section">
+            <h2 class="section-tittle">Contacto</h2>
+            <p class="section-subtitle">¿Tienes un proyecto en mente o quieres colaborar?</p>
+            <div class="contact-wrapper">
+                <div class="contact-details">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <span>Email</span>
+                            <a href="mailto:vicmmora@espol.edu.ec">vicmmora@espol.edu.ec</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                        <div>
+                            <span>Teléfono</span>
+                            <a href="tel:+593963186659">+593 96 318 6659</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-map'></i>
+                        <div>
+                            <span>Ubicación</span>
+                            <p>Guayaquil, Ecuador</p>
+                        </div>
+                    </div>
+
+                    <h3 class="social-title">Redes Sociales</h3>
+                    <div class="contact-social-links">
+                        <a href="https://github.com/vicmmoraM" aria-label="GitHub" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="#" aria-label="LinkedIn" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                        </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Envíame un Mensaje</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class='bx bx-paper-plane'></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
 
         </section>
 
@@ -163,5 +297,6 @@
             <li><a href="https://github.com/vicmmoraM">GitHub</a></li>
         </ul>
     </footer>
-
 </body>
+
+</html>
