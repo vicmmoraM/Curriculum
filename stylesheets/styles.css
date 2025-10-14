@@ -96,6 +96,12 @@ body {
     margin-bottom: 10px;
 }
 
+.tagline{
+    font-size: 1.2rem;
+    color: var(--light-text);
+    margin-bottom: 20px;
+}
+
 .legends-description {
     max-width: 600px;
     color: var(--light-text);
@@ -329,4 +335,241 @@ body {
 .education-card .institution {
     color: var(--light-text);
     font-weight: 600;
+}
+/* --- Habilidades --- */
+.skills-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.skill-main-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas principales */
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.skill-category-card {
+    background-color: var(--white); /* Fondo blanco */
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-light); /* Borde claro */
+}
+
+.skill-category-card h3 {
+    font-size: 1.5rem;
+    color: var(--dark-text); /* Texto oscuro */
+    margin-bottom: 10px;
+    border-left: 3px solid var(--primary-blue);
+    padding-left: 10px;
+}
+
+.skill-category-card p {
+    color: var(--light-text); /* Texto secundario gris */
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-tags span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #e9ecf8; /* Fondo azul claro para las etiquetas */
+    color: var(--primary-blue); /* Texto azul oscuro */
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 600; /* Un poco más de grosor para que resalte */
+    font-size: 0.9rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.skills-tags span:hover {
+    background-color: var(--primary-blue); /* Al pasar el mouse, se vuelve azul sólido */
+    color: var(--white); /* Y el texto blanco */
+}
+
+.skills-tags i {
+    font-size: 1.3rem;
+}
+/* --- Proyectos --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 25px;
+    display: flex;
+    flex-direction: column; /* Organiza el contenido verticalmente */
+}
+
+.project-card p {
+    flex-grow: 1; /* Hace que el párrafo ocupe el espacio disponible, alineando los botones */
+    color: var(--light-text);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.project-header i {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+}
+
+.project-header h3 {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.project-card .project-tags {
+    margin: 20px 0;
+}
+
+.project-card .project-tags span {
+    background-color: #e9ecf8;
+    color: var(--primary-blue);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.project-card .project-links {
+    margin-top: auto; /* Empuja los enlaces al final de la tarjeta */
+}
+
+/* --- Contacto --- */
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Columna izquierda más pequeña que la derecha */
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-details h3, .contact-form-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--dark-text);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--white);
+    padding: 20px;
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: var(--primary-blue);
+}
+
+.contact-item span {
+    display: block;
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+.contact-item a, .contact-item p {
+    color: var(--dark-text);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.social-title {
+    margin-top: 40px;
+}
+
+.contact-social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    color: var(--dark-text);
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+}
+
+.contact-social-links a:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border-color: var(--primary-blue);
+}
+
+.contact-form-container {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(74, 105, 189, 0.2);
+}
+
+form button {
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+    font-size: 1.1rem;
 }
