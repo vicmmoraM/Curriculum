@@ -165,3 +165,54 @@ h1{
     color: var(--light-text);
     font-size: 2rem;
 }
+/* --- Sobre mi --- */
+.about-content-single-column {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-text p {
+    margin-bottom: 1em;
+}
+
+.interests-container {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-light);
+}
+
+.interests-container h3 {
+    font-size: 1.5rem;
+    color: var(--dark-text);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.interests-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.interests-list li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: var(--light-text);
+    padding-left: 25px;
+    position: relative;
+}
+
+.interests-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-blue);
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.interests-list li strong {
+    color: var(--dark-text);
+    font-weight: 600;
+}
